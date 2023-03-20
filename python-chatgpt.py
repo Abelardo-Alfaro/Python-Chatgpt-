@@ -14,7 +14,7 @@ request_headers = {
     "Authorization": "Bearer "+ api_key
 }
 
-#In the request data we must specify the model we choose to select (gpt-4-32k), what we will prompt, the max tokens (which is the amount of letter and punctuations we choose to output (100), ,and how creative we want the output to be (from 0 [very predictable] to 1 [very creative], we seleceted 0,5 to be in the middle)
+#In the request data we must specify the model we choose to select (text-davinci-00), what we will prompt, the max tokens (which is the amount of letter and punctuations we choose to output (100), and how creative we want the output to be (from 0 [very predictable] to 1 [very creative], we selected 0,5 to be in the middle)
 request_data = {
 "model": "text-davinci-003",
     "prompt": f"Write python script to  {str(input_prompt)}. Provide only code, no text ",
@@ -26,11 +26,7 @@ response = requests.post(api_endpoint, headers = request_headers, json =  reques
 
 
 #We want to see if the response was actually succesful, and to do so, we need to do a IF loop
-#The status.response code outputs a code ranging from 100-199 for informational responses,
-#                                                from 200-299 when it was a ** successful response **,
-#                                                from 300-399 when its redirecting messages,
-#                                                from 400-499 when its a client error response,
-#                                                and from 500 - 599 when its a server error response
+#The status.response_code outputs a code ranging from 200-299 when it was a ** successful response **
 
 
 if response.status_code == 200:
