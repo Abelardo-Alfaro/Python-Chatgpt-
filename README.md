@@ -19,11 +19,11 @@ If you want a python file, just end the name with .py, if you want a normal file
 
 <p align="center">
 General Overview script:<br/>
-<img src="https://i.imgur.com/wS4j6z4.png" height="50%" width="50%" alt="General script overview of the chatgpt API"/>
+<img src="https://i.imgur.com/Ski2M77.png" height="50%" width="50%" alt="General script overview of the chatgpt API"/>
 <br />
 <br />
 First prompt and naming it .py:<br/>
-<img src="https://i.imgur.com/mqB4RPk.png" height="50%" width="50%" alt="First prompt and naming of the file"/>
+<img src="https://i.imgur.com/NX574oE.png" height="50%" width="50%" alt="First prompt and naming of the file"/>
 <br />
 <br />
 Result of the simple code request named Counting.py that Chatgpt generated for us using the API:  <br/>
